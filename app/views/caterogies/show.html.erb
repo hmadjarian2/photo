@@ -1,0 +1,13 @@
+<p>
+  <b>Parent:</b>
+  <%=h @caterogy.parent_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @caterogy.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_caterogy_path(@caterogy) %> |
+<%= link_to 'Back', caterogies_path %>

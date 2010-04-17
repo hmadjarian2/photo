@@ -1,0 +1,35 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+category_1:
+  id: 1
+  name: All
+
+category_2:
+  id: 2
+  parent_id: 1
+  name: People
+
+category_3:
+  id: 3
+  parent_id: 1
+  name: Animals
+
+category_4:
+  id: 4
+  parent_id: 1
+  name: Places
+
+category_5:
+  id: 5
+  parent_id: 1
+  name: Things
+
+category_6:
+  id: 6
+  parent_id: 2
+  name: Friends
+
+category_7:
+  id: 7
+  parent_id: 2
+  name: Family

@@ -1,0 +1,389 @@
+  [4;36;1mSQL (15.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (62.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (46.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePhotos (20100410214118)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "filename" varchar(255), "thumbnail" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100410214118')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("photos")[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (62.5ms)[0m   [0;1mDROP TABLE "photos"[0m
+  [4;35;1mSQL (31.3ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100410214118'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (46.9ms)[0m   [0mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "filename" varchar(255), "thumbnail" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (46.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100410214118')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (93.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (62.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePhotos (20100410214118)
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "filename" varchar(255), "thumbnail" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100410214118')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("photos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (62.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePhotos (20100410214118)
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "filename" varchar(255), "thumbnail" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100410214118')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("photos")[0m
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-04-10 18:08:07) [GET]
+  [4;36;1mPhoto Load (15.6ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 2031ms (View: 2000, DB: 16) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#show (for 127.0.0.1 at 2010-04-10 18:09:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPhoto Load (0.0ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos"."id" = 1) [0m
+Rendering template within layouts/photos
+Rendering photos/show
+Completed in 78ms (View: 31, DB: 0) | 200 OK [http://localhost/photos/1]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-04-10 18:09:20) [GET]
+  [4;36;1mPhoto Load (0.0ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 344ms (View: 313, DB: 0) | 200 OK [http://localhost/photos]
+
+
+Processing PhotosController#edit (for 127.0.0.1 at 2010-04-10 18:09:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPhoto Load (0.0ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos"."id" = 1) [0m
+Rendering template within layouts/photos
+Rendering photos/edit
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/photos/1/edit]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2010-04-10 18:09:28) [GET]
+  [4;36;1mPhoto Load (0.0ms)[0m   [0;1mSELECT * FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 203ms (View: 172, DB: 0) | 200 OK [http://localhost/photos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (78.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (62.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePhotos (20100410214118)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "filename" varchar(255), "thumbnail" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100410214118')[0m
+Migrating to CreateSlides (20100410221136)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "slides" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" integer, "photo_id" integer, "slideshow_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100410221136')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("photos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("slides")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePhotos (20100410214118)
+Migrating to CreateSlides (20100410221136)
+Migrating to CreateSlideshows (20100410221748)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCREATE TABLE "slideshows" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100410221748')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("slides")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("slideshows")[0m
+
+
+Processing SlidesController#index (for 127.0.0.1 at 2010-04-10 18:26:41) [GET]
+  [4;36;1mSlide Load (0.0ms)[0m   [0;1mSELECT * FROM "slides" [0m
+Rendering template within layouts/slides
+Rendering slides/index
+Completed in 2047ms (View: 2031, DB: 0) | 200 OK [http://www.example.com/slides]
+
+
+Processing SlidesController#index (for 127.0.0.1 at 2010-04-10 20:20:25) [GET]
+  [4;35;1mSlide Load (0.0ms)[0m   [0mSELECT * FROM "slides" [0m
+Rendering template within layouts/slides
+Rendering slides/index
+Completed in 281ms (View: 250, DB: 0) | 200 OK [http://localhost/slides]
+
+
+Processing SlidesController#show (for 127.0.0.1 at 2010-04-10 20:20:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSlide Load (0.0ms)[0m   [0;1mSELECT * FROM "slides" WHERE ("slides"."id" = 1) [0m
+Rendering template within layouts/slides
+Rendering slides/show
+Completed in 63ms (View: 31, DB: 0) | 200 OK [http://localhost/slides/1]
+
+
+Processing SlidesController#index (for 127.0.0.1 at 2010-04-10 20:20:52) [GET]
+  [4;35;1mSlide Load (0.0ms)[0m   [0mSELECT * FROM "slides" [0m
+Rendering template within layouts/slides
+Rendering slides/index
+Completed in 344ms (View: 313, DB: 0) | 200 OK [http://localhost/slides]
+
+
+Processing SlidesController#show (for 127.0.0.1 at 2010-04-10 20:20:56) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mSlide Load (0.0ms)[0m   [0;1mSELECT * FROM "slides" WHERE ("slides"."id" = 2) [0m
+Rendering template within layouts/slides
+Rendering slides/show
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/slides/2]
+
+
+Processing SlidesController#index (for 127.0.0.1 at 2010-04-10 20:21:00) [GET]
+  [4;35;1mSlide Load (0.0ms)[0m   [0mSELECT * FROM "slides" [0m
+Rendering template within layouts/slides
+Rendering slides/index
+Completed in 203ms (View: 172, DB: 0) | 200 OK [http://localhost/slides]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (78.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePhotos (20100410214118)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "filename" varchar(255), "thumbnail" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100410214118')[0m
+Migrating to CreateSlides (20100410221136)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "slides" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" integer, "photo_id" integer, "slideshow_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100410221136')[0m
+Migrating to CreateSlideshows (20100410221748)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "slideshows" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100410221748')[0m
+Migrating to CreateCaterogies (20100411003544)
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCREATE TABLE "caterogies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100411003544')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("caterogies")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("slides")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("slideshows")[0m
+  [4;36;1mPhoto Create (0.0ms)[0m   [0;1mINSERT INTO "photos" ("created_at", "thumbnail", "updated_at", "filename", "description") VALUES('2010-04-11 01:24:41', NULL, '2010-04-11 01:24:41', 'cat.jpg', NULL)[0m
+  [4;35;1mPhoto Create (0.0ms)[0m   [0mINSERT INTO "photos" ("created_at", "thumbnail", "updated_at", "filename", "description") VALUES('2010-04-11 01:25:40', NULL, '2010-04-11 01:25:40', 'dog.jpg', NULL)[0m
+  [4;36;1mPhoto Create (0.0ms)[0m   [0;1mINSERT INTO "photos" ("created_at", "thumbnail", "updated_at", "filename", "description") VALUES('2010-04-11 01:26:29', NULL, '2010-04-11 01:26:29', 'armadillo.jpg', NULL)[0m
+  [4;35;1mPhoto Load (0.0ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos"."id" = 2) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (78.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (46.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePhotos (20100410214118)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "filename" varchar(255), "thumbnail" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100410214118')[0m
+Migrating to CreateSlides (20100410221136)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "slides" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" integer, "photo_id" integer, "slideshow_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100410221136')[0m
+Migrating to CreateSlideshows (20100410221748)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "slideshows" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100410221748')[0m
+Migrating to CreateCaterogies (20100411003544)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "caterogies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100411003544')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("caterogies")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("slides")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("slideshows")[0m
+  [4;36;1mSlideshow Create (0.0ms)[0m   [0;1mINSERT INTO "slideshows" ("name", "created_at", "updated_at") VALUES(NULL, '2010-04-11 02:22:40', '2010-04-11 02:22:40')[0m
+  [4;35;1mPhoto Load (0.0ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos"."id" = 2) [0m
+  [4;36;1mSlide Load (0.0ms)[0m   [0;1mSELECT * FROM "slides" WHERE ("slides"."id" = 1) [0m
+  [4;35;1mPhoto Load (0.0ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos"."id" = 1) [0m
+  [4;36;1mSlideshow Load (0.0ms)[0m   [0;1mSELECT * FROM "slideshows" WHERE ("slideshows"."id" = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCREATE TABLE "caterogies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (62.5ms)[0m   [0;1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "filename" varchar(255), "thumbnail" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (31.3ms)[0m   [0;1mCREATE TABLE "slides" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" integer, "photo_id" integer, "slideshow_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (15.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (62.5ms)[0m   [0;1mCREATE TABLE "slideshows" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (62.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (46.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (93.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100411003544')[0m
+  [4;35;1mSQL (62.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100410214118')[0m
+  [4;36;1mSQL (593.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100410221136')[0m
+  [4;35;1mSQL (78.1ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100410221748')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePhotos (20100410214118)
+Migrating to CreateSlides (20100410221136)
+Migrating to CreateSlideshows (20100410221748)
+Migrating to CreateCaterogies (20100411003544)
+Migrating to CreateCaterogiesPhotos (20100411143728)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "caterogies_photos" ("caterogy_id" integer, "photo_id" integer) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100411143728')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("caterogies")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("caterogies_photos")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("photos")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("slides")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("slideshows")[0m
